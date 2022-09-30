@@ -1,0 +1,15 @@
+<ng-content></ng-content>
+<br />
+<br />
+
+<input type="text" [(ngModel)]="server" /> <br /><br />
+
+<button (click)="addServer()">Add server</button>
+
+<p *ngFor="let server of listOfServers">
+  {{ server }}
+</p>
+
+<p #changecolor>example of view child</p>
+
+<button>change color of server name</button>
